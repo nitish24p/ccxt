@@ -8,7 +8,7 @@ const argv = process.argv;
 const [/* node */, script, exchangeId] = argv;
 if (!exchangeId) {
   console.error(`Usage: node ${script} exchangeId`);
-  return;
+  //return;
 }
 
 const exchange = new ccxt[exchangeId](keys[exchangeId]);

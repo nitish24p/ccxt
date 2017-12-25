@@ -28,7 +28,8 @@
     "pandoc-doc-manual": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/manual.rst ccxt.wiki/Manual.md",
     "pandoc-doc-install": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/install.rst ccxt.wiki/Install.md",
     "pandoc-doc-exchanges": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/exchanges.rst ccxt.wiki/Exchange-Markets.md",
-    "pandoc-doc-exchanges-by-country": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/exchanges-by-country.rst ccxt.wiki/Exchange-Markets-By-Country.md"
+    "pandoc-doc-exchanges-by-country": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/exchanges-by-country.rst ccxt.wiki/Exchange-Markets-By-Country.md",
+    "package-libs": "babel 'js' --out-dir 'lib' --presets=es2017  --copy-files --ignore 'node_modules'"
   },
   "types": "./ccxt.d.ts",
   "dependencies": {
@@ -47,7 +48,11 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
     "nyc": "^11.0.3",
-    "ololog": "^1.1.78"
+    "ololog": "^1.1.78",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2017": "^6.24.1"
   },
   "author": {
     "name": "Igor Kroitor",

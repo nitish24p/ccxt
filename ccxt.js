@@ -30,9 +30,9 @@ SOFTWARE.
 
 //-----------------------------------------------------------------------------
 
-const Exchange  = require ('./js/base/Exchange')
-const functions = require ('./js/base/functions')
-const errors    = require ('./js/base/errors')
+const Exchange  = require ('./lib/base/Exchange')
+const functions = require ('./lib/base/functions')
+const errors    = require ('./lib/base/errors')run
 
 //-----------------------------------------------------------------------------
 // this is updated by vss.js when building
