@@ -29,7 +29,7 @@
     "pandoc-doc-install": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/install.rst ccxt.wiki/Install.md",
     "pandoc-doc-exchanges": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/exchanges.rst ccxt.wiki/Exchange-Markets.md",
     "pandoc-doc-exchanges-by-country": "pandoc --wrap=preserve --columns=10000 --from=markdown --to=rst --output=doc/exchanges-by-country.rst ccxt.wiki/Exchange-Markets-By-Country.md",
-    "package-libs": "babel 'js' --out-dir 'lib' --presets=es2017 --plugins transform-runtime --copy-files --ignore 'node_modules'"
+    "package-libs": "NODE_ENV='development' babel 'js' --out-dir 'lib' --presets=babel-preset-react-app --plugins transform-runtime --copy-files --ignore 'node_modules'"
   },
   "types": "./ccxt.d.ts",
   "dependencies": {
@@ -46,6 +46,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react-app": "^3.1.0",
     "browserify": "^14.5.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
