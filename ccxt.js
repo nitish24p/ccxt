@@ -32,12 +32,12 @@ SOFTWARE.
 
 const Exchange  = require ('./lib/base/Exchange')
 const functions = require ('./lib/base/functions')
-const errors    = require ('./lib/base/errors')run
+const errors    = require ('./lib/base/errors')
 
 //-----------------------------------------------------------------------------
 // this is updated by vss.js when building
 
-const version = '1.10.476'
+const version = '1.0.0'
 
 Exchange.ccxtVersion = version
 
